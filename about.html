@@ -19,7 +19,7 @@
             align-items: center;
             justify-content: space-between;
             top: 0px;
-            background: rgba(5, 154, 165, 0.836);
+            background: #059aa5d5;
             background-blend-mode: darken;
             background-size: cover;
             color: white;
@@ -73,7 +73,7 @@
             color: #ffd700;
         }
         body {
-            background-image: url('images/about.jpg');
+            background-image: url('images/about-background.avif');
         }
 
         body, html {
@@ -82,7 +82,7 @@
 
         body {
             /* The image used */
-            background-image: url("images/about.jpg");
+            background-image: url("images/about-background.avif");
 
             /* Full height */
             height: 100%;
@@ -92,6 +92,92 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        .p1 { color: #ffffff; background: fixed;
+             
+        }
+
+   main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+/* Outer box */
+.main-box {
+  background: #346164d5;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px #1e0b52c2;
+  padding: 40px;
+  width: 80%;
+  max-width: 1000px;
+}
+
+/* Lucas Snow section */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.container img {
+  width: 25%;
+  border-radius: 8px;
+}
+
+.text-block {
+  margin-left: 20px;
+}
+
+/* Bottom: grid + text box side by side */
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Grid of images (left) */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  flex: 1;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Text box (right) */
+.info-box {
+  flex: 1;
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+/* Responsive tweak */
+@media (max-width: 500px) {
+  .bottom-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .info-box {
+    width: 100%;
+  }
+}
+
+
     </style>
 </head>
 
@@ -105,12 +191,65 @@
         
         
     </nav>
-    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, ullam labore eum adipisci possimus temporibus reiciendis quia aliquam accusamus, autem recusandae placeat deserunt cum ad, blanditiis vitae ipsa! Deserunt, amet!Loremlorem  
 
-    </h1>
-    <br>
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolores quasi iure voluptas autem commodi magnam similique neque, tempore obcaecati expedita, id omnis aliquid ipsum aliquam illum quod! Voluptate, sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel, consequatur rerum sunt enim nihil amet nemo debitis, molestias quos ad accusantium aspernatur quibusdam. Doloribus repellendus consectetur reiciendis magni neque.</h2>
+    <H1>Meet Lucas Snow The Ceo</H1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis magni perferendis maxime, quidem minus quas, cupiditate deserunt velit expedita molestiae, quis nesciunt consequuntur! Repellendus voluptatem repudiandae doloremque maiores illo delectus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id nemo cupiditate nisi, perferendis non alias atque. Harum officia, omnis sint sed, excepturi repellendus enim consectetur reiciendis et maiores minima. Neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, aspernatur beatae! Earum sequi fuga aperiam obcaecati voluptates dignissimos provident doloremque necessitatibus tempora voluptas, dolores ea odit doloribus quaerat nemo id? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, sit laboriosam. Dicta quibusdam placeat dolore, culpa quaerat facilis nam ut deleniti fugit natus inventore sapiente quo provident quae architecto repellendus.</p>
    
+    <main>
+  <div class="main-box">
+    
+    <!-- Top: Lucas Snow -->
+    <div class="container">
+      <img src="images/Lucas-Snow.jpg" alt="Lucas Snow">
+      <div class="text-block">
+        <h1>Lucas Snow</h1>
+        <p>the ceo</p>
+      </div>
+    </div>
+    <p>what our team thinks</p>
+
+    <!-- Bottom section: Grid on left + text box on right -->
+    <div class="bottom-section">
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="images/slab-guy.jpg" alt="Person 1">
+          <div class="info-box">
+            <p>Person 1</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="images/guy3.webp" alt="Person 2">
+          <div class="info-box">
+            <p>Person 2</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="images/family deals.webp" alt="Person 3">
+          <div class="info-box">
+            <p>Person 3</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="images/red -girl.jfif" alt="Person 4">
+          <div class="info-box">
+            <p>Person 4</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h2>About the Team</h2>
+        <p>
+          Our team works under Lucas Snows leadership to deliver innovative solutions 
+          and creative ideas. Each member brings unique skills that make our company thrive.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+
     
 </body>
 
