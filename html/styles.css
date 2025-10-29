@@ -3,8 +3,8 @@ ul {
     margin: 0;
     padding: 0; 
     overflow: hidden;
-    background-color: #7b68e2;
-     border: 1px solid #000000;
+    background-color:rgba(255, 255, 255, 0.1);
+    
 }
 
 
@@ -21,13 +21,8 @@ ul li a {
 }
 
 ul li a:hover:not(.active) {
-  background-color: #173774;
+    background-color: #a3c3ff;
 }
-
-ul li a.active {
-  background-color: #ffffff;
-}
-
 
 
 
@@ -53,4 +48,51 @@ a:active {
     color: yellow;
     background-color: transparent;
     text-decoration: none;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-image: url("images/background\ image.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    animation: pan 50s linear infinite;
+    background-repeat: no-repeat;
+ 
+}
+
+@keyframes pan {
+        0% {
+            background-position: 0% center;
+        }
+        100% {
+            background-position: 100% center;
+        }
+        0% {
+            background-position: 0% center;
+        }
+}
+
+.text-section {
+        max-width: 800px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.5); /* Soft overlay for readability */
+        border-radius: 10px;
+        padding: 25px 30px;
+        backdrop-filter: blur(3px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.text-section p {
+        margin-bottom: 18px;
+        font-size: 1.05rem;
+}
+
+.text-section h2, .text-section h3 {
+    margin-top: 0;
+    font-weight: 600;
+    color: #2a2a2a;
 }
