@@ -27,7 +27,7 @@ ul li a:hover:not(.active) {
 
 
 a:link {
-    color: rgb(222, 222, 222);
+    color: green;
     background-color: transparent;
     text-decoration: none;
 }
@@ -96,4 +96,3 @@ body {
     font-weight: 600;
     color: #2a2a2a;
 }
-
