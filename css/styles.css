@@ -27,7 +27,7 @@ ul li a:hover:not(.active) {
 
 
 a:link {
-    color: green;
+    color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: none;
 }
@@ -42,6 +42,7 @@ a:hover {
     color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: none;
+    
 }
 
 a:active {
@@ -63,6 +64,10 @@ body {
     animation: pan 25s linear infinite;
     background-repeat: no-repeat;
  
+}
+.hover{
+    border-radius: 50%;
+    
 }
 
 @keyframes pan {
@@ -95,4 +100,12 @@ body {
     margin-top: 0;
     font-weight: 600;
     color: #2a2a2a;
+}
+.image-section img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
