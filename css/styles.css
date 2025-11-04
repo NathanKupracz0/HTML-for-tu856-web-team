@@ -60,7 +60,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    animation: pan 50s linear infinite;
+    animation: pan 25s linear infinite;
     background-repeat: no-repeat;
  
 }
